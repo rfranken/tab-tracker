@@ -4,7 +4,13 @@ export default {
   index () {
     return Api().get('songs')
   },
-  post (post) {
-    return Api().post('createsongs', post)
+  show (songId) {
+    return Api().get(`songs/${songId}`)
+  },
+  post (song) {
+    return Api().post('createsongs', song)
+  },
+  put (song) {
+    return Api().put(`songs/${song.id}`, song)
   }
 }

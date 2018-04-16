@@ -1,5 +1,5 @@
 <template>
-  <v-layout column>
+  <v-layout>
     <v-flex xs6 offset-xs0>
       <panel title="Songs">
         <v-btn
@@ -30,7 +30,6 @@
               <div class="song-genre">
                 {{song.genre}}
               </div>
-
               <v-btn
                 dark
                 class="cyan"
